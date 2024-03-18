@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+ul li {
+  margin-left: 10%;
+  cursor: pointer;
+  transition: all;
+}
+
+.cartnumber {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
+  border-radius: 11px;
+  font-size: 14px;
+  background: red;
+  color: white;
+}
+.hr {
+  background: red;
+  height: 4px;
+  border-radius: 100px;
+  transition: all;
+}
+
+
+.animation-container {
+  position: relative;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25%, 75% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+}
+
+.waving-hand {
+  animation: wave 2s infinite;
+}
